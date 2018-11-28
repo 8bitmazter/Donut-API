@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "DonutDetails";
+}
+<style>
+    .ImageSize
+    {
+        width: 100px;
+    }
+</style>
+<h2>Donut Details</h2>
+
+<h4>Name: @ViewBag.Name</h4>
+<h4>Calories: @ViewBag.Calories</h4>
+<h4>Extras:</h4>
+@foreach (var i in ViewBag.Extras)
+{
+    @i;
+}
+<img class="ImageSize" src="@ViewBag.Photo" />
+<a href="/Home/Donuts">Back</a>

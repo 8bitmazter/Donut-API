@@ -1,0 +1,11 @@
+﻿@model IEnumerable<DonutAPI.Models.DounutSelections>
+
+<h2>Donuts</h2>
+
+@foreach (var d in Model)
+{
+    <a href="/Home/DonutDetails?id=@d.ID"> @*This is how you can set it up by clicking on the link of it and it will take you to the donutdetails page using the ID*@
+        <h2>@d.Name</h2>
+    </a>
+}
+
